@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute-Based Encryption - Result</title>
+</head>
+<body>
+    <h1>Attribute-Based Encryption Result</h1>
+
+    {% if ciphertext %}
+        <h2>Encrypted Data:</h2>
+        <p>{{ ciphertext }}</p>
+        <h2>CP-ABE Ciphertext:</h2>
+        <p>{{ cpabe_ciphertext }}</p>
+    {% elif decrypted_data %}
+        <h2>Decrypted Data:</h2>
+        <p>{{ decrypted_data }}</p>
+    {% endif %}
+
+    <br>
+
+    <a href="/">Go back to the main page</a>
+</body>
+</html>
