@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute-Based Encryption</title>
+</head>
+<body>
+    <h1>Attribute-Based Encryption Example</h1>
+    
+    <form action="/encrypt" method="post">
+        <label for="data">Data:</label>
+        <input type="text" name="data" required>
+        
+        <br>
+        
+        <label for="policy">Policy:</label>
+        <input type="text" name="policy" required>
+        
+        <br>
+        
+        <input type="submit" value="Encrypt">
+    </form>
+
+    <hr>
+
+    <form action="/decrypt" method="post">
+        <label for="ciphertext">Ciphertext (Hex):</label>
+        <input type="text" name="ciphertext" required>
+        
+        <br>
+        
+        <label for="cpabe_ciphertext">CP-ABE Ciphertext:</label>
+        <input type="text" name="cpabe_ciphertext" required>
+        
+        <br>
+        
+        <input type="submit" value="Decrypt">
+    </form>
+</body>
+</html>
